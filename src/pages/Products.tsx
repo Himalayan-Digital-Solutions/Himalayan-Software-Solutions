@@ -57,7 +57,7 @@ export const Products = () => {
 
                 {/* Core Product Features Overview */}
                 <div className="grid lg:grid-cols-1 gap-16 mb-24">
-                    {products.map((product, idx) => {
+                    {products.map((product) => {
                         if (product.primary) {
                             return (
                                 <motion.div

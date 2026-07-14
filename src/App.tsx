@@ -8,6 +8,7 @@ import { RootLayout } from './components/layout/RootLayout';
 import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { Services } from './pages/Services';
+import { Products } from './pages/Products';
 import { GenericPage } from './pages/GenericPage';
 
 function AnimatedRoutes() {
@@ -22,7 +23,7 @@ function AnimatedRoutes() {
                 {/* Secondary Pages */}
                 <Route path="/about" element={<GenericPage title="About Us" subtitle="We build intelligent software that powers modern businesses." />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/products" element={<GenericPage title="Products" subtitle="Discover our cloud-native SaaS platforms." />} />
+                <Route path="/products" element={<Products />} />
                 <Route path="/industries" element={<GenericPage title="Industries" subtitle="Solutions tailored for your industry." />} />
                 <Route path="/portfolio" element={<GenericPage title="Portfolio" subtitle="Read our case studies." />} />
                 <Route path="/technology" element={<GenericPage title="Technology" subtitle="The modern stack we use." />} />

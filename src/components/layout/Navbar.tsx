@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
+import logoImage from '../../assets/Logo/Logo.png';
 
 export const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -34,7 +35,8 @@ export const Navbar = () => {
         >
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="flex items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2">
+                    <Link to="/" className="flex items-center gap-3">
+                        <img src={logoImage} alt="Himalayan Software Solutions Logo" className="h-14 w-auto object-contain mix-blend-lighten" />
                         <span className="font-heading font-bold text-xl tracking-tight">Himalayan<span className="text-primary">.</span></span>
                     </Link>
 

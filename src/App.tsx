@@ -9,6 +9,7 @@ import { Home } from './pages/Home';
 import { Contact } from './pages/Contact';
 import { Services } from './pages/Services';
 import { Products } from './pages/Products';
+import { About } from './pages/About';
 import { GenericPage } from './pages/GenericPage';
 
 function AnimatedRoutes() {
@@ -21,7 +22,7 @@ function AnimatedRoutes() {
                 <Route path="/contact" element={<Contact />} />
 
                 {/* Secondary Pages */}
-                <Route path="/about" element={<GenericPage title="About Us" subtitle="We build intelligent software that powers modern businesses." />} />
+                <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/industries" element={<GenericPage title="Industries" subtitle="Solutions tailored for your industry." />} />

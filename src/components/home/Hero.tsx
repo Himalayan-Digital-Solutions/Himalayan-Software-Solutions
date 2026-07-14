@@ -13,15 +13,6 @@ export const Hero = () => {
             {/* Main Content */}
             <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center">
 
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium mb-8 backdrop-blur-md"
-                >
-                    Introducing Himalayan ERP 2.0 ✨
-                </motion.div>
-
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}

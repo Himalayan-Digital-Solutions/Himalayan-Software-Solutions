@@ -13,6 +13,23 @@ export const Hero = () => {
             {/* Main Content */}
             <div className="container mx-auto px-6 max-w-7xl relative z-10 text-center">
 
+                {/* Premium Abstract Decorative Element */}
+                <motion.div
+                    initial={{ opacity: 0, width: 0 }}
+                    animate={{ opacity: 1, width: "100%" }}
+                    transition={{ duration: 1.5, ease: "easeInOut" }}
+                    className="flex justify-center mb-10 pointer-events-none mx-auto max-w-xs relative"
+                >
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+                    </div>
+                    <div className="relative flex items-center justify-center">
+                        <div className="absolute w-32 h-8 bg-primary/20 blur-[15px] rounded-full" />
+                        <div className="absolute w-12 h-3 bg-accent/40 blur-[8px] rounded-full" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_15px_3px_rgba(56,189,248,0.8)]" />
+                    </div>
+                </motion.div>
+
                 <motion.h1
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
